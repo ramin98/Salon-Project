@@ -1,0 +1,716 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" type="text/css" href="manikur.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav-mobile-div">
+
+        <div class="mobile-menu-header">
+            <div class="header-div-mobile">
+                <div class="exit" onclick="exit_menu()"></div>
+                <a class="logo-link " href="index.html">
+                    <picture class="logo ">
+                        <source srcset="img/logo1920.png" media="(min-width: 1920px)">
+                        <source srcset="img/logo1000.png" media="(min-width: 1000px)">
+                        <source srcset="img/logo768.png" media="(min-width: 768px)">
+                        <source srcset="img/logo320.png" media="(min-width: 320px)">
+                        <img src="img/logo1920.png" alt="logo">
+                    </picture>
+                </a>
+                <a class="telephone menu-telephone" href="tel: +7 (495) 132-00-03" alt=""></a>
+            </div>
+        </div>
+        <div class="menu-services-div">
+            <div class="menu-services">
+                <div class="menu" onclick="open_menu_part()"><span class="menu-text">Меню</span></div>
+                <div class="services" onclick="open_services_part()"><span class="services-text">Услуги</span></div>
+            </div>
+        </div>
+        <nav class="nav-mobile">
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="services.html">Услуги</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Дизайны</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Прайс</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">О студии</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Отзывы</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Статьи</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Акции</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Контакты</a>
+            </div>
+
+        </nav>
+        <nav class="nav-mobile nav-mobile-services">
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Маникюр</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Педикюр</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Дизайны</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Покрытия</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Наращивание ногтей</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Brow Bar</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Ламинирование бровей</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Макияж и причёска</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Наращивание ресниц</a>
+            </div>
+
+
+        </nav>
+        <div class="menu-line-div"><span class="menu-line"></span></div>
+        <div class="navigation-div-menu">
+            <span class="telephon-number-menu-mobile" style="display: block;">+7 (495) 132-00-03</span>
+            <span class="order-menu-mobile order-js" style="display:block;" onclick="open_register()">Записаться онлайн</span>
+            <div class="time-div-menu-mobile" style="display:flex; justify-content: center;">
+                <img class="time-img" src="img/time.png " alt=" ">
+                <span class="time-text-menu-mobile">Ежедневно с 10 до 22</span>
+            </div>
+            <div class="location-div-menu-mobile" style="display:flex;">
+                <img class="location-img" src="img/location.png " alt=" ">
+                <span class="location-text-menu-mobile">Белорусская, Александра Невского, 19–25</span>
+            </div>
+            <div class="soc-div-menu">
+                <a class="media-item-menu soc-img" href=" ">
+                    <img class="soc-pic-menu" src="img/instagram.svg" alt="">
+                </a>
+                <a class="media-item-menu soc-img soc-img-face" href=" ">
+                    <img class="soc-pic-menu face" src="img/face.svg" alt="">
+                </a>
+                <a class="media-item-menu soc-img" href=" ">
+                    <img class="soc-pic-menu" src="img/wp.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="register-online-container">
+        <div class="register-exit-div">
+            <div class="register-exit-img" onclick="exit_register()"></div>
+        </div>
+        <div class="register-online-content-div">
+            <div class="register-online-content">
+                <p class="register-online-text">Записаться онлайн</p>
+                <p class="register-online-description">Онлайн запись позволяет выбрать студию, время, услугу и мастера. Это займет около 3 минут.</p>
+                <button class="register-online-button"><span class="register-online-button-text">Записаться онлайн</span></button>
+            </div>
+            <div class="register-online-content register-wp">
+                <p class="register-online-text">Записаться WhatsApp</p>
+                <p class="register-online-description">Наши операторы ответят через 5 мин. Подберут удобное время и ответят на любые вопросы.</p>
+                <button class="register-online-button"><span class="register-online-button-text">Написать в WhatsApp</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header-div ">
+                <img class="menu-button" onclick="open_menu()" src="img/menu-button.png " alt=" ">
+                <a class="logo-link " href="index.html">
+                    <picture class="logo ">
+                        <source srcset="img/logo1920.png " media="(min-width: 1920px) ">
+                        <source srcset="img/logo1000.png " media="(min-width: 1000px) ">
+                        <source srcset="img/logo768.png " media="(min-width: 768px) ">
+                        <source srcset="img/logo320.png " media="(min-width: 320px) ">
+                        <img src="img/logo1920.png " alt="logo ">
+                    </picture>
+                </a>
+                <div class="info-and-menu ">
+                    <div class="info ">
+                        <div class="time-div ">
+                            <img class="time-img " src="img/time.png " alt=" ">
+                            <span class="time-text ">Ежедневно с 10 до 22</span>
+                        </div>
+                        <div class="location-div ">
+                            <img class="location-img " src="img/location.png " alt=" ">
+                            <span class="location-text ">Белорусская, Александра Невского, 19–25</span>
+                        </div>
+                        <a href="tel: +7 (495) 132-00-03 " class="telephon-number ">+7 (495) 132-00-03</a>
+                        <span class="order order-js" onclick="open_register()">Записаться онлайн</span>
+
+                    </div>
+                    <span class="line "></span>
+                    <nav class="nav ">
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href="services.html">Услуги</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Дизайны</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Прайс</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">О студии</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Отзывы</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Статьи</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Акции</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Контакты</a>
+                        </div>
+
+                    </nav>
+
+
+
+                </div>
+                <a class="telephone " href="tel: +7 (495) 132-00-03 " alt=" "></a>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container-first">
+                <div class="page"><a class="page-link" href="index.html">Главная</a><span style="margin-left:10px ">/</span><a class="page-link" href="services.html" style="margin-left:10px ">Наши Услуги</a><span style="margin-left:10px ">/</span><span style="margin-left:10px ">Маникюр</span></div>
+                <div class="main-banner">
+
+
+                    <div class="baner-container">
+                        <div class="banner-content-container banner-content-container-none">
+                            <p class="manikur">Маникюр</p>
+                            <p class="main-banner-text">Сделай лучший маникюр в Amalfi</p>
+                            <button class="main-banner-button"><span class="main-banner-button-text">Записаться</span></button>
+                        </div>
+
+                        <img class="banner-img" src="img/banner-img-1920.png" alt="logo">
+
+
+                        <img class="amalfi" src="img/amalfi.png" alt="logo">
+
+                    </div>
+                </div>
+            </div>
+            <div class="banner-content-container banner-content-container-none-mobile">
+                <p class="manikur">Маникюр</p>
+                <p class="main-banner-text">Сделай лучший маникюр в Amalfi</p>
+                <button class="main-banner-button"><span class="main-banner-button-text">Записаться</span></button>
+            </div>
+
+            <div class="posts-container">
+                <div class="posts-item">
+                    <div class="posts-img-div">
+                        <div class="posts-img-block posts-img-block-1"></div>
+                        <img class="posts-img" src="img/first-post.png">
+                    </div>
+
+
+                    <div class="posts-content first-post">
+                        <p class="posts-head">
+                            Маникюр и педикюр в 4 руки
+                        </p>
+                        <p class="posts-text">
+                            Время — наш самый ценный ресурс. В современном мире каждая минута на вес золота, что порождает стремление везде успевать и грамотно использовать окна в своём графике. Поэтому тратить 4-5 часов на маникюр и педикюр — непозволительная «роскошь».
+                        </p>
+                        <button class="posts-button"><span class="posts-button-text">Подробнее</span></button>
+                    </div>
+                </div>
+                <div class="posts-item post-order">
+
+                    <div class="posts-content">
+                        <p class="posts-head">
+                            Маникюр классический
+                        </p>
+                        <p class="posts-text">
+                            Классический вариант маникюра можно использовать каждой женщине, но лучше всего он подойдет для грубой толстой кутикулы, которую будет сложно размягчить ремувером. Мастера рекомендуют начинать с классического маникюра, а затем постепенно переходить к
+                            европейскому необрезному маникюру, когда кутикула станет более мягкая.
+                        </p>
+                        <button class="posts-button"><span class="posts-button-text">Подробнее</span></button>
+                    </div>
+                    <div class="posts-img-div second-post">
+                        <div class="posts-img-block posts-img-block-3"></div>
+                        <img class="posts-img" src="img/second-post.png">
+                    </div>
+                </div>
+                <div class="posts-item">
+                    <div class="posts-img-div">
+                        <div class="posts-img-block posts-img-block-3"></div>
+                        <img class="posts-img" src="img/third-post.png">
+                    </div>
+                    <div class="posts-content third-post">
+                        <p class="posts-head">
+                            Европейский маникюр
+                        </p>
+                        <p class="posts-text">
+                            При процедуре европейского маникюра для размягчения кутикулы и облегчения её удаления используется не распаривание рук в ванночке (как в классическом маникюре), а специальное средство – ремувер, которое позволяет размягчить ткань кутикулы. Ремувер – это
+                            жидкость на основе фруктовых кислот. Оно наносится на кутикулу на пару минут. За это время она становится значительно мягче и подвижнее. В остальном данный вид маникюра по процедуре ничем не отличается от классического.
+                        </p>
+                        <button class="posts-button"><span class="posts-button-text">Подробнее</span></button>
+                    </div>
+                </div>
+                <div class="posts-item post-order">
+
+                    <div class="posts-content">
+                        <p class="posts-head">
+                            Маникюр аппаратный /комбинированный
+                        </p>
+                        <p class="posts-text">
+                            Эти два метода похожи намного больше, чем комбинированный и классический. Их роднит сухой способ обработки с использованием фрезера с различными насадками без предварительного замачивания.
+                        </p>
+                        <button class="posts-button"><span class="posts-button-text">Подробнее</span></button>
+                    </div>
+                    <div class="posts-img-div fourth-post">
+                        <div class="posts-img-block posts-img-block-4"></div>
+                        <img class="posts-img" src="img/fourth-post.png">
+                    </div>
+                </div>
+                <div class="posts-item">
+                    <div class="posts-img-div">
+                        <div class="posts-img-block posts-img-block-5"></div>
+                        <img class="posts-img" src="img/five-post.png">
+                    </div>
+                    <div class="posts-content five-post">
+                        <p class="posts-head">
+                            Маникюр бразильский
+                        </p>
+                        <p class="posts-text">
+                            Для данного вида маникюра используется специальный комплект принадлежностей, предназначенный для одноразового использования в целях ухода за ногтевыми пластинами. Главное преимущество бразильского маникюра — одноразовые перчатки с кремом. В состав крема
+                            входят растительные компоненты, кератин, витамин Е, мочевина для размягчения кутикулы и масло копаибы. Такой набор обеспечит вам мягкость и шелковистость кистей.
+                        </p>
+                        <button class="posts-button"><span class="posts-button-text">Подробнее</span></button>
+                    </div>
+                </div>
+                <div class="posts-item post-order">
+
+                    <div class="posts-content">
+                        <p class="posts-head">
+                            Маникюр мужской
+                        </p>
+                        <p class="posts-text">
+                            Мужские ногти отличаются от женских, поэтому у мастера, выполняющего процедуру, должно быть понимание о физиологических отличиях женских у мужских ногтей. Физиологически ногтевая пластина мужчин более толстая и крепкая, чем у женщин. Это обусловлено повышенным
+                            содержанием кератина, придающего крепость ногтям, поэтому для придания формы мужскому ногтю требуется больше времени. Кожа кистей рук грубеет сильней, чем у женщин, и из-за этого ногтевое ложе требует более частого и тщательного
+                            ухода. Маникюр сильного пола заключается в удалении кутикулы, придании формы ногтям, их очистке, полировке, питании кремом.
+                        </p>
+                        <button class="posts-button"><span class="posts-button-text">Подробнее</span></button>
+                    </div>
+                    <div class="posts-img-div six-post">
+                        <div class="posts-img-block posts-img-block-6"></div>
+                        <img class="posts-img" src="img/six-post.png">
+                    </div>
+                </div>
+            </div>
+            <p class="advantages">Преимущества профессионального маникюра </p>
+            <div class="container-second">
+
+                <p class="advantages-text">Красивый маникюр и ухоженные ногти являются неотъемлемой частью современного образа. Маникюр требуется школьникам, студентам, домохозяйкам, деловым женщинам и мужчинам. Современные магазины предлагают широкий выбор инструментов и оборудования
+                    для домашнего маникюра и педикюра. Но на процедуру требуется много времени и опыта для качественной и безопасной обработки ногтевых пластин. Поэтому лучшее решение – обратиться за качественной помощью в студию маникюра. </p>
+                <p class="advantages-list-description">Профессиональный маникюр в Москве отличается рядом положительных моментов:</p>
+                <ul class="advantages-list">
+                    <li class="advantages-list-item"><span class="advantages-list-item-text">мы используем профессиональные инструменты и оборудование;</span></li>
+                    <li class="advantages-list-item"><span class="advantages-list-item-text">в вашем распоряжении богатая цветовая палитра покрытий;</span></li>
+                    <li class="advantages-list-item"><span class="advantages-list-item-text">мастера работают только профессиональными и сертифицированными средствами;</span></li>
+                    <li class="advantages-list-item"><span class="advantages-list-item-text">у нас большой выбор услуг для ухода за ногтями и кожей рук;</span></li>
+                    <li class="advantages-list-item"><span class="advantages-list-item-text">в нашей студии работают только опытные мастера.</span></li>
+                </ul>
+
+            </div>
+            <details class="read-more">
+                <p class="description-text">Красивый маникюр и ухоженные ногти являются неотъемлемой частью современного образа. Маникюр требуется школьникам, студентам, домохозяйкам, деловым женщинам и мужчинам. Современные магазины предлагают широкий выбор инструментов и оборудования
+                    для домашнего маникюра и педикюра. Но на процедуру требуется много времени и опыта для качественной и безопасной обработки ногтевых пластин. Поэтому лучшее решение – обратиться за качественной помощью в студию маникюра. </p>
+                <summary>Читать дальше</summary>
+
+
+            </details>
+            <div class="answer-container">
+                <p class="answers-head">Ответы на частые вопросы</p>
+                <div class="answers-list">
+                    <div class="answers-item">
+                        <div class="plus-minus plus-minus-1"><img class="plus-1 plus" onclick="open_answer_one()" src="img/plus.png" alt=""><img class="minus-1 minus" onclick="exit_answer_one()" src="img/minus.png" alt=""></div>
+                        <div class="questions-div">
+                            <span class="questions-text">Что такое классический маникюр?</span>
+                            <p class="answer-1 answer">Бразильский маникюр – это необрезная техника обработки рук, ногтей и кутикулы, подразумевающая размачивание с помощью перчаток, заполненных специальной кремовой эмульсией.</p>
+                        </div>
+                    </div>
+                    <div class="answers-item">
+                        <div class="plus-minus plus-minus-2"><img class="plus-2 plus" onclick="open_answer_two()" src="img/plus.png" alt=""><img class="minus-2 minus" onclick="exit_answer_two()" src="img/minus.png" alt=""></div>
+                        <div class="questions-div">
+                            <span class="questions-text">Что такое комбинированный маникюр?</span>
+                            <p class="answer-2 answer">Бразильский маникюр – это необрезная техника обработки рук, ногтей и кутикулы, подразумевающая размачивание с помощью перчаток, заполненных специальной кремовой эмульсией.</p>
+                        </div>
+                    </div>
+                    <div class="answers-item">
+                        <div class="plus-minus plus-minus-3"><img class="plus-3 plus" onclick="open_answer_three()" src="img/plus.png" alt=""><img class="minus-3 minus" onclick="exit_answer_three()" src="img/minus.png" alt=""></div>
+                        <div class="questions-div">
+                            <span class="questions-text">Что такое аппаратный маникюр?</span>
+                            <p class="answer-3 answer">Бразильский маникюр – это необрезная техника обработки рук, ногтей и кутикулы, подразумевающая размачивание с помощью перчаток, заполненных специальной кремовой эмульсией.</p>
+                        </div>
+                    </div>
+                    <div class="answers-item">
+                        <div class="plus-minus plus-minus-4"><img class="plus-4 plus" onclick="open_answer_four()" src="img/plus.png" alt=""><img class="minus-4 minus" onclick="exit_answer_four()" src="img/minus.png" alt=""></div>
+                        <div class="questions-div">
+                            <span class="questions-text">Что такое бразильский маникюр?</span>
+                            <p class="answer-4 answer">Бразильский маникюр – это необрезная техника обработки рук, ногтей и кутикулы, подразумевающая размачивание с помощью перчаток, заполненных специальной кремовой эмульсией.</p>
+                        </div>
+                    </div>
+                    <div class="answers-item">
+                        <div class="plus-minus plus-minus-5"><img class="plus-5 plus" onclick="open_answer_five()" src="img/plus.png" alt=""><img class="minus-5 minus" onclick="exit_answer_five()" src="img/minus.png" alt=""></div>
+                        <div class="questions-div">
+                            <span class="questions-text">Какие виды маникюра делают в наших студиях?</span>
+                            <p class="answer-5 answer">Бразильский маникюр – это необрезная техника обработки рук, ногтей и кутикулы, подразумевающая размачивание с помощью перчаток, заполненных специальной кремовой эмульсией.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="galery-container-main">
+                <div class="our-work-div">
+                    <p class="our-work-text">Наши работы</p>
+                    <a class="we-in-instagram" href=""><span class="we-in-instagram-text">Посмотреть ещё в Instagram</span></a>
+                </div>
+                <div class="galery-container">
+                    <div class="galery-slide">
+                        <div class="galery-div-slide">
+                            <img class="galery-img" src="img/img-1.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-2.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-3.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-4.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-5.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-6.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-7.png" alt="">
+                        </div>
+                        <div class="galery-div-slide display-none">
+                            <img class="galery-img" src="img/img-8.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="slider-img-galery slider-img">
+                        <div class="slider-img_item" onclick="currentSlide_galery(1)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(2)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(3)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(4)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(5)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(6)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(7)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+                        <div class="slider-img_item" onclick="currentSlide_galery(8)">
+                            <div class="wrap-opacity"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <p class="our-work-mobile">Наши работы</p>
+            <div class="items">
+                <img class="item" src="img/slider-img-2.png">
+                <img class="item" src="img/slider-img-2.png">
+                <img class="item" src="img/slider-img-2.png">
+            </div>
+            <a class="we-in-instagram we-in-instagram-mobile" href=""><span class="we-in-instagram-text">Посмотреть ещё в Instagram</span></a>
+
+
+            <div class="price-listcontainer-main">
+                <div class="price-head-register">
+                    <p class="price-list-head">Прайс-лист</p>
+                    <a class="register register-none" href=""><span class="register-text">Записаться</span></a>
+                </div>
+                <div class="price-list-container">
+                    <div class="price-list-div">
+                        <div class="items-div-first">
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Стразы [мал. 1 шт.]</span>
+                                <span class="price-list-item-price">20 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Стразы [бол./фигур. 1 шт.]</span>
+                                <span class="price-list-item-price">30 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Полоски самокл. [1 шт.]</span>
+                                <span class="price-list-item-price">50 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Слайдер 1 ноготок</span>
+                                <span class="price-list-item-price">50 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Френч/Лунки/Обратный</span>
+                                <span class="price-list-item-price">50 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Глиттер / Блестки</span>
+                                <span class="price-list-item-price">100 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Глиттер / Блестки Luxio</span>
+                                <span class="price-list-item-price">100 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Бархатный песок/Мармелад</span>
+                                <span class="price-list-item-price">100 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Бархатный песок/Пикси/Сахар [кристаллы]</span>
+                                <span class="price-list-item-price">100 ₽</span>
+
+                            </div>
+                        </div>
+                        <div class="items-div-second">
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Дизайн "Мрамор"</span>
+                                <span class="price-list-item-price">150 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Дизайн "Битое стекло"</span>
+                                <span class="price-list-item-price">150 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Топ Luxio Shimmer</span>
+                                <span class="price-list-item-price">200-300 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Матовый топ</span>
+                                <span class="price-list-item-price">200-300 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Покрытие "Кошачий глаз"</span>
+                                <span class="price-list-item-price">200-300 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Растяжка Блестками/Глиттером</span>
+                                <span class="price-list-item-price">200-300 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Втирка/Фольга</span>
+                                <span class="price-list-item-price">250-350 ₽</span>
+
+                            </div>
+                            <div class="price-list-item">
+                                <span class="price-list-item-name">Омбре/Градиент</span>
+                                <span class="price-list-item-price">300-350 ₽</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mobile-register-div">
+                    <a class="register" href=""><span class="register-text">Записаться</span></a>
+                </div>
+            </div>
+            <p class="trust-us ">Доверьте нам работу над красотой!</p>
+            <div class="benefits-list ">
+                <div class="benefits-item ">
+                    <picture class="benefits-img ">
+                        <source srcset="img/garant180.png " media="(min-width: 1920px) ">
+                        <source srcset="img/garant150.png " media="(min-width: 630px) ">
+                        <img src="img/garant180.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name b-n-1">Гарантия на покрытие - N дней</p>
+                    <p class="benefit-description ">Переделаем покрытие бесплатно в течение N дней после маникюра или педикюра, если с ним что-то случится</p>
+                </div>
+                <div class="benefits-item ">
+                    <picture class="logo ">
+                        <source srcset="img/studio180.png " media="(min-width: 1920px) ">
+                        <source srcset="img/studio150.png " media="(min-width: 630px) ">
+                        <img src="img/studio180.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name ">Профилактические меры
+                    </p>
+                    <p class="benefit-description ">Мы безоговорочно следуем указам Роспотребнадзора и заботимся о клиентах и сотрудниках</p>
+                </div>
+                <div class="benefits-item ">
+                    <picture class="logo ">
+                        <source srcset="img/profilactic180.png " media="(min-width: 1920px) ">
+                        <source srcset="img/profilactic150.png " media="(min-width: 630px) ">
+                        <img src="img/profilactic180.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name ">Студия в сердце столицы</p>
+                    <p class="benefit-description ">Салон красоты бизнес-класса в центре Москвы у метро «Белорусская»</p>
+                    <div class="benefits-link-div ">
+                        <a class="benefits-link " href=" "><span>Адрес студии</span> <img class="pointer " src="img/Vector.png " alt=" "></a>
+
+                    </div>
+                </div>
+                <div class="benefits-item ">
+                    <picture class="logo ">
+                        <source srcset="img/atmosphere.png " media="(min-width: 1920px) ">
+                        <source srcset="img/atmosphere150.png " media="(min-width: 630px) ">
+                        <img src="img/atmosphere.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name ">Роскошная атмосфера
+                    </p>
+                    <p class="benefit-description ">Погрузитесь в красивое стильное пространство, где хочется находиться!</p>
+                    <div class="benefits-link-div ">
+                        <a class="benefits-link " href=" "><span>Смотреть фото</span><img class="pointer " src="img/Vector.png " alt=" "></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer ">
+            <div class="footer-div ">
+                <div class="footer-nav ">
+                    <a class="logo-link logo-footer " href="index.html">
+                        <picture class="logo-footer ">
+                            <source srcset="img/logo1920.png " media="(min-width: 1920px) ">
+                            <source srcset="img/logo1000.png " media="(min-width: 1000px) ">
+                            <source srcset="img/logo768.png " media="(min-width: 768px) ">
+                            <source srcset="img/logo320.png " media="(min-width: 320px) ">
+                            <img src="img/logo1920.png " alt="logo ">
+                        </picture>
+                    </a>
+                    <div class="navigation-div ">
+                        <span class="telephon-number telephon-number-footer telephon-number-footer-mobile ">+7 (495) 132-00-03</span>
+                        <span class="order-footer-mobile order-js" onclick="open_register()">Записаться онлайн</span>
+                        <div class="time-div-footer-mobile ">
+                            <img class="time-img " src="img/time.png " alt=" ">
+                            <span class="time-text time-text-footer " style="font-family: Manrope;">Ежедневно с 10 до 22</span>
+                        </div>
+                        <div class="location-div location-div-footer ">
+                            <img class="location-img " src="img/location.png " alt=" ">
+                            <span class="location-text location-text-footer ">Белорусская, Александра Невского, 19–25</span>
+                        </div>
+                        <div class="time-div time-div-footer ">
+                            <img class="time-img " src="img/time.png " alt=" ">
+                            <span class="time-text time-text-footer ">Ежедневно с 10 до 22</span>
+                        </div>
+                        <a href="tel: +7 (495) 132-00-03 " class="telephon-number telephon-number-footer ">+7 (495) 132-00-03</a>
+                    </div>
+                </div>
+                <span class="footer-line-first "></span>
+                <div class="footer-nav-menu ">
+                    <div class="footer-link ">
+                        <div class="footer-nav-menu-item ">
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href="manikur.html ">Маникюр</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Педикюр</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Покрытия</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Наращивание</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav-menu-item ">
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href="services.html">Услуги</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Дизайны</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Прайс</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">О студии</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav-menu-item ">
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Отзывы</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Статьи</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Акции</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="footer-line-second "></span>
+                    <div class="media-contacts ">
+                        <span class="mail ">amalfibeauty.ru@yandex.ru</span>
+                        <div class="soc-div ">
+                            <a class="media-item " href=" ">
+                                <div class="soc-img soc-img-insta "><img class="soc-pic" src="img/instagram.svg" alt=""></div><span class="media-text ">Instagram</span></a>
+                            <a class="media-item " href=" ">
+                                <div class="soc-img soc-img-face "><img class="soc-pic face" src="img/face.svg" alt=""></div><span class="media-text ">facebook</span></a>
+                            <a class="media-item " href=" ">
+                                <div class="soc-img soc-img-wp "><img class="soc-pic" src="img/wp.svg" alt=""></div><span class="media-text ">whatsapp</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="slider-two.js"></script>
+
+
+
+</body>
+
+</html>

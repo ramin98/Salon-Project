@@ -1,0 +1,365 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav-mobile-div">
+
+        <div class="mobile-menu-header">
+            <div class="header-div-mobile">
+                <div class="exit" onclick="exit_menu()"></div>
+                <a class="logo-link " href="index.html">
+                    <picture class="logo ">
+                        <source srcset="img/logo1920.png " media="(min-width: 1920px) ">
+                        <source srcset="img/logo1000.png " media="(min-width: 1000px) ">
+                        <source srcset="img/logo768.png " media="(min-width: 768px) ">
+                        <source srcset="img/logo320.png " media="(min-width: 320px) ">
+                        <img src="img/logo1920.png " alt="logo ">
+                    </picture>
+                </a>
+                <a class="telephone menu-telephone" href="tel: +7 (495) 132-00-03" alt=""></a>
+            </div>
+        </div>
+        <div class="menu-services-div">
+            <div class="menu-services">
+                <div class="menu" onclick="open_menu_part()"><span class="menu-text">Меню</span></div>
+                <div class="services" onclick="open_services_part()"><span class="services-text">Услуги</span></div>
+            </div>
+        </div>
+        <nav class="nav-mobile">
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="services.html">Услуги</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Дизайны</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Прайс</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">О студии</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Отзывы</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Статьи</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Акции</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Контакты</a>
+            </div>
+
+        </nav>
+        <nav class="nav-mobile nav-mobile-services">
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Маникюр</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Педикюр</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Дизайны</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Покрытия</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Наращивание ногтей</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Brow Bar</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Ламинирование бровей</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Макияж и причёска</a>
+            </div>
+            <div class="mobile-menu-item">
+                <a class="menu-item-mobile" href="">Наращивание ресниц</a>
+            </div>
+
+
+        </nav>
+        <div class="menu-line-div"><span class="menu-line"></span></div>
+        <div class="navigation-div-menu">
+            <span class="telephon-number-menu-mobile" style="display: block;">+7 (495) 132-00-03</span>
+            <span class="order-menu-mobile order-js" style="display:block;" onclick="open_register()">Записаться онлайн</span>
+            <div class="time-div-menu-mobile" style="display:flex; justify-content: center;">
+                <img class="time-img" src="img/time.png " alt=" ">
+                <span class="time-text-menu-mobile">Ежедневно с 10 до 22</span>
+            </div>
+            <div class="location-div-menu-mobile" style="display:flex;">
+                <img class="location-img" src="img/location.png " alt=" ">
+                <span class="location-text-menu-mobile">Белорусская, Александра Невского, 19–25</span>
+            </div>
+            <div class="soc-div-menu">
+                <a class="media-item-menu soc-img" href=" ">
+                    <img class="soc-pic-menu" src="img/instagram.svg" alt="">
+                </a>
+                <a class="media-item-menu soc-img soc-img-face" href=" ">
+                    <img class="soc-pic-menu face" src="img/face.svg" alt="">
+                </a>
+                <a class="media-item-menu soc-img" href=" ">
+                    <img class="soc-pic-menu" src="img/wp.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="register-online-container">
+        <div class="register-exit-div">
+            <div class="register-exit-img" onclick="exit_register()"></div>
+        </div>
+        <div class="register-online-content-div">
+            <div class="register-online-content">
+                <p class="register-online-text">Записаться онлайн</p>
+                <p class="register-online-description">Онлайн запись позволяет выбрать студию, время, услугу и мастера. Это займет около 3 минут.</p>
+                <button class="register-online-button"><span class="register-online-button-text">Записаться онлайн</span></button>
+            </div>
+            <div class="register-online-content register-wp">
+                <p class="register-online-text">Записаться WhatsApp</p>
+                <p class="register-online-description">Наши операторы ответят через 5 мин. Подберут удобное время и ответят на любые вопросы.</p>
+                <button class="register-online-button"><span class="register-online-button-text">Написать в WhatsApp</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header-div ">
+                <img class="menu-button" onclick="open_menu()" src="img/menu-button.png " alt=" ">
+                <a class="logo-link " href="index.html">
+                    <picture class="logo ">
+                        <source srcset="img/logo1920.png " media="(min-width: 1920px) ">
+                        <source srcset="img/logo1000.png " media="(min-width: 1000px) ">
+                        <source srcset="img/logo768.png " media="(min-width: 768px) ">
+                        <source srcset="img/logo320.png " media="(min-width: 320px) ">
+                        <img src="img/logo1920.png " alt="logo ">
+                    </picture>
+                </a>
+                <div class="info-and-menu ">
+                    <div class="info ">
+                        <div class="time-div ">
+                            <img class="time-img " src="img/time.png " alt=" ">
+                            <span class="time-text ">Ежедневно с 10 до 22</span>
+                        </div>
+                        <div class="location-div ">
+                            <img class="location-img " src="img/location.png " alt=" ">
+                            <span class="location-text ">Белорусская, Александра Невского, 19–25</span>
+                        </div>
+                        <a href="tel: +7 (495) 132-00-03 " class="telephon-number ">+7 (495) 132-00-03</a>
+                        <span class="order order-js" onclick="open_register()">Записаться онлайн</span>
+
+                    </div>
+                    <span class="line "></span>
+                    <nav class="nav ">
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href="services.html">Услуги</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Дизайны</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Прайс</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">О студии</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Отзывы</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Статьи</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Акции</a>
+                        </div>
+                        <div class="link-ease-in-out ">
+                            <a class="menu-item " href=" ">Контакты</a>
+                        </div>
+
+                    </nav>
+
+
+
+                </div>
+                <a class="telephone " href="tel: +7 (495) 132-00-03 " alt=" "></a>
+            </div>
+        </header>
+        <main class="main ">
+            <div class="services-list-div ">
+                <div class="page"><a class="page-link" href="index.html">Главная</a><span style="margin-left:10px ">/</span><span style="margin-left:10px ">Наши Услуги</span></div>
+                <h1 class="our-services ">Наши услуги</h1>
+                <div class="services-list ">
+                    <a href="manikur.html" class="services-item "><span class="services-item-name ">Маникюр</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Педикюр</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Дизайн</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Дополнительные услуги</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Покрытия</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Наращивание ногтей</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Brow Bar</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Наращивание ресниц</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Ламинирование ресниц</span><div class="wrap-opacity "></div></a>
+                    <a href=" " class="services-item "><span class="services-item-name ">Ламинирование бровей</span><div class="wrap-opacity "></div></a>
+
+                </div>
+            </div>
+            <p class="trust-us ">Доверьте нам работу над красотой!</p>
+            <div class="benefits-list ">
+                <div class="benefits-item ">
+                    <picture class="benefits-img ">
+                        <source srcset="img/garant180.png " media="(min-width: 1920px) ">
+                        <source srcset="img/garant150.png " media="(min-width: 630px) ">
+                        <img src="img/garant180.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name b-n-1">Гарантия на покрытие - N дней</p>
+                    <p class="benefit-description ">Переделаем покрытие бесплатно в течение N дней после маникюра или педикюра, если с ним что-то случится</p>
+                </div>
+                <div class="benefits-item ">
+                    <picture class="logo ">
+                        <source srcset="img/studio180.png " media="(min-width: 1920px) ">
+                        <source srcset="img/studio150.png " media="(min-width: 630px) ">
+                        <img src="img/studio180.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name ">Профилактические меры
+                    </p>
+                    <p class="benefit-description ">Мы безоговорочно следуем указам Роспотребнадзора и заботимся о клиентах и сотрудниках</p>
+                </div>
+                <div class="benefits-item ">
+                    <picture class="logo ">
+                        <source srcset="img/profilactic180.png " media="(min-width: 1920px) ">
+                        <source srcset="img/profilactic150.png " media="(min-width: 630px) ">
+                        <img src="img/profilactic180.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name ">Студия в сердце столицы</p>
+                    <p class="benefit-description ">Салон красоты бизнес-класса в центре Москвы у метро «Белорусская»</p>
+                    <div class="benefits-link-div ">
+                        <a class="benefits-link " href=" "><span>Адрес студии</span> <img class="pointer " src="img/Vector.png " alt=" "></a>
+
+                    </div>
+                </div>
+                <div class="benefits-item ">
+                    <picture class="logo ">
+                        <source srcset="img/atmosphere.png " media="(min-width: 1920px) ">
+                        <source srcset="img/atmosphere150.png " media="(min-width: 630px) ">
+                        <img src="img/atmosphere.png " alt="logo ">
+                    </picture>
+                    <p class="benefit-name ">Роскошная атмосфера
+                    </p>
+                    <p class="benefit-description ">Погрузитесь в красивое стильное пространство, где хочется находиться!</p>
+                    <div class="benefits-link-div ">
+                        <a class="benefits-link " href=" "><span>Смотреть фото</span><img class="pointer " src="img/Vector.png " alt=" "></a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer ">
+            <div class="footer-div ">
+                <div class="footer-nav ">
+                    <a class="logo-link logo-footer " href="index.html">
+                        <picture class="logo-footer ">
+                            <source srcset="img/logo1920.png " media="(min-width: 1920px) ">
+                            <source srcset="img/logo1000.png " media="(min-width: 1000px) ">
+                            <source srcset="img/logo768.png " media="(min-width: 768px) ">
+                            <source srcset="img/logo320.png " media="(min-width: 320px) ">
+                            <img src="img/logo1920.png " alt="logo ">
+                        </picture>
+                    </a>
+                    <div class="navigation-div ">
+                        <span class="telephon-number telephon-number-footer telephon-number-footer-mobile ">+7 (495) 132-00-03</span>
+                        <span class="order-footer-mobile order-js" onclick="open_register()">Записаться онлайн</span>
+                        <div class="time-div-footer-mobile ">
+                            <img class="time-img " src="img/time.png " alt=" ">
+                            <span class="time-text time-text-footer " style="font-family: Manrope;">Ежедневно с 10 до 22</span>
+                        </div>
+                        <div class="location-div location-div-footer ">
+                            <img class="location-img " src="img/location.png " alt=" ">
+                            <span class="location-text location-text-footer ">Белорусская, Александра Невского, 19–25</span>
+                        </div>
+                        <div class="time-div time-div-footer ">
+                            <img class="time-img " src="img/time.png " alt=" ">
+                            <span class="time-text time-text-footer ">Ежедневно с 10 до 22</span>
+                        </div>
+                        <a href="tel: +7 (495) 132-00-03 " class="telephon-number telephon-number-footer ">+7 (495) 132-00-03</a>
+                    </div>
+                </div>
+                <span class="footer-line-first "></span>
+                <div class="footer-nav-menu ">
+                    <div class="footer-link ">
+                        <div class="footer-nav-menu-item ">
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href="manikur.html ">Маникюр</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Педикюр</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Покрытия</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Наращивание</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav-menu-item ">
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href="services.html">Услуги</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Дизайны</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Прайс</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">О студии</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav-menu-item ">
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Отзывы</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Статьи</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Акции</a>
+                            </div>
+                            <div class="link-ease-in-out menu-item-footer ">
+                                <a class="menu-item " href=" ">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="footer-line-second "></span>
+                    <div class="media-contacts ">
+                        <span class="mail ">amalfibeauty.ru@yandex.ru</span>
+                        <div class="soc-div ">
+                            <a class="media-item " href=" ">
+                                <div class="soc-img soc-img-insta "><img class="soc-pic" src="img/instagram.svg" alt=""></div><span class="media-text ">Instagram</span></a>
+                            <a class="media-item " href=" ">
+                                <div class="soc-img soc-img-face "><img class="soc-pic face" src="img/face.svg" alt=""></div><span class="media-text ">facebook</span></a>
+                            <a class="media-item " href=" ">
+                                <div class="soc-img soc-img-wp "><img class="soc-pic" src="img/wp.svg" alt=""></div><span class="media-text ">whatsapp</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
